@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="1f34b68d9d0447e4b450ed2ed2370d9b" Name="Diagram1">
+        <EntityTypeShape EntityType="DBShopModel.Categories" Width="1.5" PointX="0.5" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBShopModel.Goods" Width="1.5" PointX="2.75" PointY="0.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBShopModel.Providers" Width="1.5" PointX="0.5" PointY="2.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBShopModel.Salary" Width="1.5" PointX="2.75" PointY="3.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBShopModel.sysdiagrams" Width="1.5" PointX="6.875" PointY="2" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBShopModel.Transaction" Width="1.5" PointX="5" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBShopModel.Workers" Width="1.5" PointX="5" PointY="3.5" IsExpanded="true" />
+        <AssociationConnector Association="DBShopModel.FK_Goods_Categories" ManuallyRouted="false" />
+        <AssociationConnector Association="DBShopModel.FK_Goods_Providers" ManuallyRouted="false" >
+        </AssociationConnector>
+        <AssociationConnector Association="DBShopModel.FK_Transaction_Goods" ManuallyRouted="false" />
+        <AssociationConnector Association="DBShopModel.FK_Workers_Salary" ManuallyRouted="false" />
+        <AssociationConnector Association="DBShopModel.FK_Transaction_Workers" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
